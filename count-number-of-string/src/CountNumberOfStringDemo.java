@@ -1,9 +1,8 @@
-package prime_number;
 
 public class CountNumberOfStringDemo {
 
 	public static void main(String[] args) {
-		
+		// TODO Auto-generated method stub
 		String input = "Welcome to the Java Programming Basic Course";
 		
 		int count = 0;
@@ -12,7 +11,6 @@ public class CountNumberOfStringDemo {
 				count += 1;
 		}
 		System.out.println("Count is: "+count);
-
 	}
 
 }
