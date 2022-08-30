@@ -15,6 +15,7 @@ import com.qa.orangehrm.pages.PimPage;
 import com.qa.orangehrm.pages.PunchInPage;
 
 public class BaseTest {
+	
 	private WebDriver driver;
 	public Properties prop;
 	public LoginPage loginPage;
@@ -24,13 +25,13 @@ public class BaseTest {
 	public Directory dir;
 	DriverFactory driverFact;
 	
-	@Parameters({"browser","version"})
+	
 	@BeforeTest
 	public void setUp() {
 		driverFact = new DriverFactory();	
 		prop = driverFact.init_prop();
-		driver = driverFact.init_driver(prop.getProperty("browser"));
-		driver.get(prop.getProperty("url"));
+		driver = driverFact.init_driver("chrome");
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		loginPage = new LoginPage(driver);
 	}
 	

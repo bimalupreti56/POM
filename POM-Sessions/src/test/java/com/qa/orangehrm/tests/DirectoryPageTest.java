@@ -8,9 +8,9 @@ import com.qa.orangehrm.base.BaseTest;
 public class DirectoryPageTest extends BaseTest{
 
 	@BeforeClass
-	public void setUppp() {
+	public void setUp() {
 		
-		dir = loginPage.navToDirectoryPage(prop.getProperty("username"), prop.getProperty("password"));
+		dir = loginPage.navToDirectoryPage("admin","admin123");
 		
 	}
 	

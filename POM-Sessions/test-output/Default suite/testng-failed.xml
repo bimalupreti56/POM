@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.orangehrm.tests.DashboardPageTest">
+      <class name="com.qa.orangehrm.tests.DirectoryPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="quickLaunchListTest"/>
           <include name="setUp"/>
-          <include name="DashboardPageSetUp"/>
+          <include name="tearDown"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.tests.DashboardPageTest -->
+      </class> <!-- com.qa.orangehrm.tests.DirectoryPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
