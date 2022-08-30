@@ -29,16 +29,16 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Regression_Test" class="navigator-link">
-              <span class="suite-name border-skipped">Regression Test</span>
+            <a href="#" class="navigator-link" panel-name="suite-Regression_Test">
+              <span class="suite-name border-passed">Regression Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Regression_Test">
                     <span>D:\April2022\POM-Sessions\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Regression_Test">
                     <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Regression_Test">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Regression_Test">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Regression_Test">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Regression_Test">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Regression_Test" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Regression_Test">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Regression_Test" class="hide-methods skipped suite-Regression_Test"> (hide)</a> <!-- hide-methods skipped suite-Regression_Test -->
-                      <a href="#" panel-name="suite-Regression_Test" class="show-methods skipped suite-Regression_Test"> (show)</a> <!-- show-methods skipped suite-Regression_Test -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression_Test" class="hide-methods passed suite-Regression_Test"> (hide)</a> <!-- hide-methods passed suite-Regression_Test -->
+                      <a href="#" panel-name="suite-Regression_Test" class="show-methods passed suite-Regression_Test"> (show)</a> <!-- show-methods passed suite-Regression_Test -->
                     </span>
-                    <div class="method-list-content skipped suite-Regression_Test">
+                    <div class="method-list-content passed suite-Regression_Test">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Test" title="com.qa.orangehrm.tests.DirectoryPageTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="forgotPwdLinkTest">forgotPwdLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Regression_Test -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.qa.orangehrm.tests.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,51 +127,35 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_Test" class="panel Regression_Test">
-          <div class="suite-Regression_Test-class-skipped">
+          <div class="suite-Regression_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.orangehrm.tests.DirectoryPageTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.orangehrm.tests.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.orangehrm.pages.LoginPage.navToDirectoryPage(String, String)&quot; because &quot;this.loginPage&quot; is null
-	at com.qa.orangehrm.tests.DirectoryPageTest.setUp(DirectoryPageTest.java:13)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="forgotPwdLinkTest">
+                  </a> <!-- forgotPwdLinkTest -->
+                  <span class="method-name">forgotPwdLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Test-class-skipped -->
+          </div> <!-- suite-Regression_Test-class-passed -->
         </div> <!-- panel Regression_Test -->
         <div panel-name="test-xml-Regression_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -171,23 +165,23 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Regression Test&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Orange Hrm Login Page Test&quot; verbose=&quot;5&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot; name=&quot;Regression Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;5&quot; name=&quot;Orange Hrm Login Page Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;version&quot; value=&quot;104.0.5112.80 &quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://opensource-demo.orangehrmlive.com/index.php/auth/login&quot;/&gt;
   &lt;/test&gt; &lt;!-- Orange Hrm Login Page Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Orange Hrm Dashboard Page Test&quot; verbose=&quot;5&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;5&quot; name=&quot;Orange Hrm Dashboard Page Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;version&quot; value=&quot;104.0.5112.80 &quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://opensource-demo.orangehrmlive.com/index.php/auth/login&quot;/&gt;
   &lt;/test&gt; &lt;!-- Orange Hrm Dashboard Page Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;5&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;version&quot; value=&quot;104.0.5112.80 &quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://opensource-demo.orangehrmlive.com/index.php/auth/login&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.orangehrm.tests.DirectoryPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.orangehrm.tests.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression Test --&gt;
@@ -233,16 +227,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'com.qa.orangehrm.tests.DirectoryPageTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.qa.orangehrm.tests.LoginPageTest')
+data.setCell(0, 3, 3128);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'forgotPwdLinkTest')
+data.setCell(1, 2, 'com.qa.orangehrm.tests.LoginPageTest')
+data.setCell(1, 3, 644);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginPageTitleTest')
+data.setCell(2, 2, 'com.qa.orangehrm.tests.LoginPageTest')
+data.setCell(2, 3, 39);
 window.suiteTableData['Regression_Test']= { tableData: data, tableDiv: 'times-div-Regression_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Regression_Test">
               </div> <!-- times-div-Regression_Test -->
             </div> <!-- times-div -->
@@ -268,17 +270,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.orangehrm.tests.DirectoryPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
+              <div class="chronological-class-name">com.qa.orangehrm.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">test</span>
-                <span class="method-start">-1661826813412 ms</span>
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">7748 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">forgotPwdLinkTest</span>
+                <span class="method-start">7790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">8435 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11565 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
