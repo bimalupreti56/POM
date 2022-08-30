@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Regression Test]" guice-stage="DEVELOPMENT" verbose="5">
-  <test thread-count="5" name="Test(failed)" verbose="5">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Regression Test]">
+  <test thread-count="5" verbose="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <parameter name="version" value="104.0.5112.80 "/>
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/index.php/auth/login"/>
     <classes>
-      <class name="com.qa.orangehrm.tests.LoginPageTest">
+      <class name="com.qa.orangehrm.tests.DirectoryPageTest">
         <methods>
+          <include name="directoryPageSetUp"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
-          <include name="forgotPwdLinkTest"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+      </class> <!-- com.qa.orangehrm.tests.DirectoryPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Regression Test] -->

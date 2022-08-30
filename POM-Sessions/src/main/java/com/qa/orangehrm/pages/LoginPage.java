@@ -92,5 +92,11 @@ public class LoginPage {
 		return new Directory(driver);
 		
 	}
+	
+	public Leave navToLeave(String un, String pwd) {
+		doLogin(un,pwd);
+		elemUtil.doClick(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a"));
+		return new Leave(driver);
+	}
 
 }

@@ -1,6 +1,7 @@
 package com.qa.orangehrm.tests;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.orangehrm.base.BaseTest;
@@ -8,9 +9,9 @@ import com.qa.orangehrm.base.BaseTest;
 public class DirectoryPageTest extends BaseTest{
 
 	@BeforeClass
-	public void setUp() {
+	public void directoryPageSetUp() {
 		
-		dir = loginPage.navToDirectoryPage("admin","admin123");
+		dir = loginPage.navToDirectoryPage(prop.getProperty("username"),prop.getProperty("password"));
 		
 	}
 	

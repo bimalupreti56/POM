@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 import com.qa.orangehrm.factory.DriverFactory;
 import com.qa.orangehrm.pages.AddEmployeePage;
 import com.qa.orangehrm.pages.Directory;
+import com.qa.orangehrm.pages.Leave;
 import com.qa.orangehrm.pages.LoginPage;
 import com.qa.orangehrm.pages.PimPage;
 import com.qa.orangehrm.pages.PunchInPage;
@@ -23,6 +24,7 @@ public class BaseTest {
 	public AddEmployeePage addEmpPage;
 	public PunchInPage punchInPage;
 	public Directory dir;
+	public Leave leave;
 	DriverFactory driverFact;
 	
 	
@@ -30,8 +32,8 @@ public class BaseTest {
 	public void setUp() {
 		driverFact = new DriverFactory();	
 		prop = driverFact.init_prop();
-		driver = driverFact.init_driver("chrome");
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver = driverFact.init_driver(prop.getProperty("browser"));
+		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
 	}
 	

@@ -13,7 +13,7 @@ public class PimPageTest extends BaseTest{
 	
 	@BeforeClass
 	public void DashboardPageSetUp() {
-		pimPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		//pimPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test(priority = 1)
